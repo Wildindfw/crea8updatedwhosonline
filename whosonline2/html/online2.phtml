@@ -7,56 +7,78 @@
         </div>
         </div>
     </div>
-    <a ajax="true" href="<?php echo url_to_pager('online-members') ?>" class="loop owl-carousel owl-theme ">
-     <div class="owl-carousel">
-    <div class="title"><?php _lang('who_online2::who_online2') ?></div>
-    <div class="row">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="../plugins/whosonline2/css.theme.min.css">
- 
-          <h4 id="center-with-loop">Center with loop</h4>
-          <div class="loop owl-carousel owl-theme">
-            <div class="online-members">
-              <h4>1</h4>
-            </div>
-            <div class="online-members">
-              <h4>2</h4>
-            </div>
-            <div class="online-members">
-              <h4>3</h4>
-            </div>
-            <div class="online-members">
-              <h4>4</h4>
-            </div>
-            <div class="online-members">
-              <h4>5</h4>
-            </div>
-            <div class="online-members">
-              <h4>6</h4>
-            </div>
-            <div class="online-members">
-              <h4>7</h4>
-            </div>
-            <div class="online-members">
-              <h4>8</h4>
-            </div>
-            <div class="online-members">
-              <h4>9</h4>
-            </div>
-            <div class="online-members">
-              <h4>10</h4>
-            </div>
-            <div class="online-members">
-              <h4>11</h4>
-            </div>
-            <div class="online-members">
-              <h4>12</h4>
-            </div>
-          </div>?>
-            <?php _lang('more') ?>
-            <i class="ion-ios-arrow-forward pull-right"></i>
-        </div>
-    </a>
-                <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.7.0/d3.min.js"></script> 
-            <script src="../plugins/whosonline2/js/owl.carousel.min.js"></script>
-</div>
+    <?php echo $this->getChildHtml('online2') ?>
+    "\n";
+ "        <link rel=\"stylesheet\" href=\"../plugins/whosonline2/cssowl.carousel.min.css\">\n";
+ "      <link rel=\"stylesheet\" href=\"../plugins/whosonline2/cssowl.theme.default.min.css\">\n";
+ " \n";
+ "<div class=\"owl-carousel\">\n";
+ "    <div class=\"title\"><?php _lang('who_online2::who_online2') ?></div>\n";
+ "    <div class=\"row\">\n";
+ "    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>\n";
+ "      \n";
+ "\n";
+ "          <h4 id=\"center-with-loop\">Center with loop</h4>\n";
+ "          <div class=\"loop owl-carousel owl-theme\">\n";
+ "            <div class=\"online-members\">\n";
+ <a data-toggle="tooltip" title="<?php echo get_user_name($user); ?>" ajax="true" href="<?php echo profile_url(null,$user) ?>">
+ "              <h4>1</h4>\n";
+ "            </div>\n";
+ "            <div class=\"online-members\">\n";
+  <a data-toggle="tooltip" title="<?php echo get_user_name($user); ?>" ajax="true" href="<?php echo profile_url(null,$user) ?>">
+ "              <h4>2</h4>\n";
+ "            </div>\n";
+ "            <div class=\"online-members\">\n";
+  <a data-toggle="tooltip" title="<?php echo get_user_name($user); ?>" ajax="true" href="<?php echo profile_url(null,$user) ?>">
+ "              <h4>3</h4>\n";
+ "            </div>\n";
+ "            <div class=\"online-members\">\n";
+  <a data-toggle="tooltip" title="<?php echo get_user_name($user); ?>" ajax="true" href="<?php echo profile_url(null,$user) ?>">
+ "              <h4>4</h4>\n";
+ "            </div>\n";
+ "            <div class=\"online-members\">\n";
+  <a data-toggle="tooltip" title="<?php echo get_user_name($user); ?>" ajax="true" href="<?php echo profile_url(null,$user) ?>">
+ "              <h4>5</h4>\n";
+ "            </div>\n";
+ "            <div class=\"online-members\">\n";
+  <a data-toggle="tooltip" title="<?php echo get_user_name($user); ?>" ajax="true" href="<?php echo profile_url(null,$user) ?>">
+ "              <h4>6</h4>\n";
+ "            </div>\n";
+ "            <div class=\"online-members\">\n";
+  <a data-toggle="tooltip" title="<?php echo get_user_name($user); ?>" ajax="true" href="<?php echo profile_url(null,$user) ?>">
+ "              <h4>7</h4>\n";
+ "            </div>\n";
+ "            <div class=\"online-members\">\n";
+  <a data-toggle="tooltip" title="<?php echo get_user_name($user); ?>" ajax="true" href="<?php echo profile_url(null,$user) ?>">
+ "              <h4>8</h4>\n";
+ "            </div>\n";
+ "            <div class=\"online-members\">\n";
+  <a data-toggle="tooltip" title="<?php echo get_user_name($user); ?>" ajax="true" href="<?php echo profile_url(null,$user) ?>">
+ "              <h4>9</h4>\n";
+ "            </div>\n";
+ "            <div class=\"online-members\">\n";
+  <a data-toggle="tooltip" title="<?php echo get_user_name($user); ?>" ajax="true" href="<?php echo profile_url(null,$user) ?>">
+ "              <h4>10</h4>\n";
+ "            </div>\n";
+ "            <div class=\"online-members\">\n";
+   <a data-toggle="tooltip" title="<?php echo get_user_name($user); ?>" ajax="true" href="<?php echo profile_url(null,$user) ?>">
+ "              <h4>11</h4>\n";
+ "            </div>\n";
+ "            <div class=\"online-members\">\n";
+  <a data-toggle="tooltip" title="<?php echo get_user_name($user); ?>" ajax="true" href="<?php echo profile_url(null,$user) ?>">
+ "              <h4>12</h4>\n";
+ "            </div>\n";
+ "          </div>?>\n";
+ "          \n";
+ " \n";
+ "\n";
+ "          <!-- Stylesheets -->\n";
+ "       \n";
+ "\n";
+ "    <!-- Owl Stylesheets -->\n";
+ "   \n";
+      <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.7.0/d3.min.js"></script> 
+        <script src="../plugins/whosonline2/js/owl.carousel.min.js"></script>
+
+?>
+      
