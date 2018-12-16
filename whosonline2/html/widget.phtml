@@ -1,0 +1,71 @@
+<div class="owl-carousel">
+    <div class="title"><?php _lang('who_online2::who_online2') ?></div>
+    <div class="row">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="../plugins/whosonline2/css.theme.min.css">
+ 
+          <h4 id="center-with-loop">Center with loop</h4>
+          <div class="loop owl-carousel owl-theme">
+            <div class="online-members">
+              <h4>1</h4>
+            </div>
+            <div class="online-members">
+              <h4>2</h4>
+            </div>
+            <div class="online-members">
+              <h4>3</h4>
+            </div>
+            <div class="online-members">
+              <h4>4</h4>
+            </div>
+            <div class="online-members">
+              <h4>5</h4>
+            </div>
+            <div class="online-members">
+              <h4>6</h4>
+            </div>
+            <div class="online-members">
+              <h4>7</h4>
+            </div>
+            <div class="online-members">
+              <h4>8</h4>
+            </div>
+            <div class="online-members">
+              <h4>9</h4>
+            </div>
+            <div class="online-members">
+              <h4>10</h4>
+            </div>
+            <div class="online-members">
+              <h4>11</h4>
+            </div>
+            <div class="online-members">
+              <h4>12</h4>
+            </div>
+          </div>?>
+          
+ 
+
+          <!-- Stylesheets -->
+       
+
+    <!-- Owl Stylesheets -->
+    
+    <link rel="stylesheet" href="../plugins/whosonline2/cssowl.carousel.min.css">
+    <link rel="stylesheet" href="../plugins/whosonline2/cssowl.theme.default.min.css">
+        <div class="container who_online2" style="display: row">
+        <?php echo view('who_online2::online',array('limit'=>$limit)); ?>
+        <link rel="stylesheet" href="../plugins/whosonline2/cssowl.carousel.min.css">
+        </div>
+        </div>
+    </div>
+    <a ajax="true" href="<?php echo url_to_pager('online-members') ?>" class="right btn-flat ">
+        <div class="title">
+            <?php _lang('more') ?>
+            <i class="ion-ios-arrow-forward pull-right"></i>
+            <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.7.0/d3.min.js"></script> 
+            <script src="../plugins/whosonline2/js/owl.carousel.min.js"></script>
+  
+        </div>
+    </a>
+</div>

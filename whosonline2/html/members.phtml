@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="owl-carousel"><?php echo lang('who_online2::online-members') ?></div>
+    <div class="owl-carousel">
+        <!-- Stylesheets -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../plugins/whosonline2/css.theme.min.css">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="../plugins/whosonline2/cssowl.carousel.min.css">
+    <link rel="stylesheet" href="../plugins/whosonline2/cssowl.theme.default.min.css">
+        <div class="row container" style="padding: 0">
+        <?php  $members = get_online_members();
+        if($members): ?>
+            <?php foreach($members as $m):
+                $user = find_user($m);
+                ?>
+                <div class="who_online2_c">
+                <?php echo view('user/display',array('user'=>$user)); ?>
+                </div>
+                <?php  endforeach; ?>
+        <?php else: ?>
+            <div class="alert alert-info"><?php echo lang('who_online2:no-member-is-online'); ?></div>
+        <?php endif; ?>
+        <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.7.0/d3.min.js"></script> 
+        <script src="../plugins/whosonline2/js/owl.carousel.min.js"></script>
+        </div>
+    </div>
+</div>
